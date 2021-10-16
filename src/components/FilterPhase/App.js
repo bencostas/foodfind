@@ -6,7 +6,6 @@ const FilterPhase = () => {
         <div classame = 'filterPhase'>
             <section id = 'selectionScreen'>
                 <FoodFilter />
-
             </section>
             <section>
             </section>
