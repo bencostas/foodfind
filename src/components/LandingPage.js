@@ -16,9 +16,10 @@ function LandingPage() {
         <p>
         Decide what you want to eat with your friends!
         </p>
-        <button>
+        <button className="startButton" onClick='./FilterPhase'>
+          Start Search
         </button>
-          <Link path='./FilterPhase' component={FilterPhase}>
+          <Link to='./FilterPhase' component={FilterPhase}>
             Start Search
           </Link>
       </header> 
