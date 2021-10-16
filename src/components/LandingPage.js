@@ -1,6 +1,5 @@
 import logo from '../foodfind-logo.png';
 import './LandingPage.css';
-import FilterPhase from './FilterPhase/App';
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 // import {
