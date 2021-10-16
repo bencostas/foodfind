@@ -1,13 +1,17 @@
 import './App.css';
-import FilterPhase from './components/FilterPhase/App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
+import FilterPhase from './components/FilterPhase/App';
+
 
 function App() {
   return (
-    <div>
-      <LandingPage/>
-      <FilterPhase/>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component = {LandingPage} />
+        <Route exact path="/filter" component = {FilterPhase} />
+      </Switch>
+    </Router>
   );
 }
 
