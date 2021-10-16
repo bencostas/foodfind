@@ -3,10 +3,9 @@ import FoodCard from './foodCard';
 import cuisineData from '../data/cuisineData';
 
 const FoodFilter = () => {
-
     return(
         <div className = 'foodFilter'>
-            <label> Instruction </label>
+            <h1 id="introduction"> Instructions </h1>
             <div>
                 {cuisineData.map((cuisine) => {
                     return (
