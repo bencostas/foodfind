@@ -29,10 +29,13 @@ const fetchRestaurants = (query) => {
         address:Restaurant.vicinity,
         openNow:Restaurant.opening_hours,
         location:Restaurant.geometry, 
-        cuisine:query
+        cuisine:query,
+        ban:false
       }
       if (!restaurantExists(RestaurantObj.name, RestaurantObj.address)) {
-        Restaurants.push(RestaurantObj);
+        if(RestaurantObj.rating >= 4.0) {
+          Restaurants.push(RestaurantObj);
+        }
       }
     })
   })
