@@ -1,0 +1,7 @@
+.sidePanel {
+    height: 100%;
+    width: 30%;
+    background-color: #ffffff;
+    position: absolute;
+    border-right: black;
+}
