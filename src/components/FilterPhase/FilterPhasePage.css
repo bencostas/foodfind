@@ -1,0 +1,39 @@
+.filterPhase{
+    width: 500px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 40px;;}
+
+#introduction{
+
+    border-radius: 18px;
+    text-align: center;
+    width: 500px;
+    font-size: 20px;
+
+}
+.FoodCard{
+    border-radius: 18px;
+    background-color: #F4F4F4;
+    width: 100px;
+    display: inline-table;
+    font-size: 25px;
+    padding: 5px;
+    margin: 13px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+
+}
+
+#slider{
+    font-size: 15px;
+}
+
+.foodFilter {
+    color: black;
+    height: 600px;
+}
+  
+  
