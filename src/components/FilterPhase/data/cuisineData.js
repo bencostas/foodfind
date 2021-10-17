@@ -10,6 +10,10 @@ const cuisineData = [
     {
         name: "Indian",
         selected: false
+    },
+    {
+        name: "Burger",
+        selected: false
     } 
 ]
 

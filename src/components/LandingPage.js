@@ -1,7 +1,8 @@
 import logo from '../foodfind-logo.png';
 import './LandingPage.css';
-import React from 'react';
+import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom';
+import useGeolocation from './useGeoLocation';
 // import {
 //   BrowserRouter as Router, Route, Switch, Link, BrowserRouter
 // } from 'react-router-dom';
