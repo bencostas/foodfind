@@ -1,15 +1,27 @@
 const cuisineData = [
     {
         name: "Chinese",
-        selected: false
+        selected: true
     },
     {
         name: "Japanese",
-        selected: false
+        selected: true
     },
     {
         name: "Indian",
+<<<<<<< HEAD
+        selected: true
+    },
+    {
+        name: "Burger",
+        selected: true
+=======
         selected: false
+    },
+    {
+        name: "Burger",
+        selected: false
+>>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
     } 
 ]
 

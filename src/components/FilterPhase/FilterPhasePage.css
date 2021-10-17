@@ -1,17 +1,21 @@
 .filterPhase{
-    width: 20%;
+    width: 35%;
+    text-align: center;
+}
+
+.selectionScreen{
     background-color: white;
     color: black;
     text-align: center;
     font-size: 40px;
-    display: inline-table;
 }
 
-
 #introduction{
-
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 18px;
     text-align: center;
+    margin: auto;
     font-size: 20px;
 
 }
@@ -20,13 +24,18 @@
     background-color: #F4F4F4;
     width: 100px;
     display: inline-table;
-    font-size: 25px;
+    font-size: 24px;
     padding: 5px;
     margin: 13px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+<<<<<<< HEAD
+}
 
-
+.FoodCard:hover {
+    background-color: #B9B9B9;
+=======
+>>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
 }
 
 #slider{
@@ -35,11 +44,22 @@
 
 .foodFilter {
     color: black;
-    height: 600px;
+    height: 40%;
+}
+
+.continueButton{
+    width: 280px;
+    height: 72px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #D9F1E3;
+    border-radius: 24px;
+    font-size: 28px;
 }
   
 .mapContainer {
     display: inline;
+    left: 35%;
     position: absolute;
     top: 0;
 }
