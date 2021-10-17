@@ -5,7 +5,8 @@ import cuisineData from '../data/cuisineData';
 const FoodFilter = () => {
     return(
         <div className = 'foodFilter'>
-            <h1 id="introduction"> Instructions </h1>
+            <h1 id="introduction"> Click on a cuisine to toggle its ban and 
+            adjust the price and distance you are comfortable with through the sliders </h1>
             <div>
                 {cuisineData.map((cuisine) => {
                     return (

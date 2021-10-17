@@ -8,7 +8,8 @@ const FoodCard = ({cuisine}) => {
     return(
         <div style={{ backgroundColor: color }}
         onClick={() => {
-            cuisine.status = !cuisine.status;
+            cuisine.selected = !cuisine.selected;
+            console.log(cuisine.selected)
             if(color === '#F4F4F4')
                 setColor('#B9B9B9');
             else

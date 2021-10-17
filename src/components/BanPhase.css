@@ -1,7 +1,48 @@
-.sidePanel {
-    height: 100%;
-    width: 30%;
-    background-color: #ffffff;
-    position: absolute;
-    border-right: black;
+.selectionScreen {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.RestaurantTitle{
+    font-size: 24px;
+}
+.info{
+    font-size: 16px;
+    margin: 6px 0px;
+}
+
+.RestaurantCard{
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.ban {
+    width: 90px;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #F27878;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.copy{
+    width: 90px;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #D9F1E3;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+
+.confirmButton{
+    width: 240px;
+    height: 60px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: #D9F1E3;
+    border-radius: 24px;
+    font-size: 28px;
 }
