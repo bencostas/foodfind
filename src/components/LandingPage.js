@@ -8,9 +8,11 @@ import useGeolocation from './useGeoLocation';
 // } from 'react-router-dom';
 
 
+
 function LandingPage() {
 
   let history = useHistory();
+  const location = useGeolocation();
 
   return (
     <div className="App">
@@ -19,6 +21,11 @@ function LandingPage() {
         <p>
         Decide what you want to eat with your friends!
         </p>
+
+        <div className = "locationTest">{
+          location.loaded ? JSON.stringify(location) 
+          : "Location data not available"
+        }</div>
         <button onClick={() => {
           history.push("/filter");
         }} className="startButton" > 

@@ -21,7 +21,6 @@ const center = {
   lng: -79.3935609
 };
 
-<<<<<<< HEAD
 const BanPhase = () => {
 
   cuisineData.map((cuisine) => {
@@ -32,9 +31,6 @@ const BanPhase = () => {
 
   console.log(Restaurants)
 
-=======
-function MyComponent() {
->>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey:  process.env.REACT_APP_GOOGLE_API_KEY,

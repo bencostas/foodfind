@@ -1,0 +1,49 @@
+.statement{
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+
+.grid{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+    margin-top: 80px;
+    width: 700px;
+    border-radius: 30px;
+
+}
+  
+.restaurant { grid-area: name; }
+.resPhoto { grid-area: image; }
+.address { grid-area: address; }
+
+.grid {
+    display: grid;
+    grid-template-areas:
+      'name name name image image'
+      'name name name image image'
+      'address address address address address'
+      'address address address address address';
+    background-color: white;
+    padding: 10px;
+}
+
+.restaurant{
+    padding-top: 80px;
+    font-size: 40px;
+
+}
+
+.resPhoto{
+    padding-top: 45px;
+    border-radius: 20px;
+}
+
+.address{
+    padding: 80px;
+    font-size: 25px;
+}
