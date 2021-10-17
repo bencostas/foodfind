@@ -4,12 +4,13 @@ import FoodFilter from "./components/foodFilter";
 import PriceFilter from "./components/priceFilter";
 import './FilterPhasePage.css';
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import {useHistory} from 'react-router-dom';
 
 
 const containerStyle = {
-    width: "80vw",
+    width: "64.5vw",
     height: "100vh",
-    left: "20vw",
+    left: "0vw",
   };
   
   const options = {
@@ -18,11 +19,14 @@ const containerStyle = {
   }
   
   const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: 43.879014,
+    lng: -79.3935609
   };
 
 const FilterPhase = () => {
+
+    let history = useHistory();
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey:  process.env.REACT_APP_GOOGLE_API_KEY,
@@ -30,15 +34,18 @@ const FilterPhase = () => {
     
     const [map, setMap] = React.useState(null)
     
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds();
-        map.fitBounds(bounds);
-        setMap(map)
-    }, [])
+    // const onLoad = React.useCallback(function callback(map) {
+    //     const bounds = new window.google.maps.LatLngBounds();
+    //     map.fitBounds(bounds);
+    //     setMap(map)
+    // }, [])
     
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
+    // const onUnmount = React.useCallback(function callback(map) {
+    //     setMap(null)
+    // }, [])
+
+    // onLoad={onLoad}
+    // onUnmount={onUnmount}
     return isLoaded ? (
         <div className = 'filterPhase'>
             <section className = 'selectionScreen'>
@@ -47,16 +54,18 @@ const FilterPhase = () => {
                 <DistanceFilter />
             </section>
             <section className="buttonScreen">
-            <button type="button" className="continueButton">Continue</button>
+            <button onClick={() => {
+            history.push("/ban");
+            }}
+            type="button"
+            className="continueButton">Continue</button>
 
             </section>
             <div className="mapContainer">
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
-                zoom={10}
-                onLoad={onLoad}
-                onUnmount={onUnmount}
+                zoom={14}
                 options={options}
             >
                 { /* Child components, such as markers, info windows, etc. */ }

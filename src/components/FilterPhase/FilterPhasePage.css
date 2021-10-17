@@ -31,6 +31,10 @@
     padding-bottom: 41px;
 }
 
+.FoodCard:hover {
+    background-color: #B9B9B9;
+}
+
 #slider{
     font-size: 15px;
 }
@@ -52,6 +56,7 @@
   
 .mapContainer {
     display: inline;
+    left: 35%;
     position: absolute;
     top: 0;
 }

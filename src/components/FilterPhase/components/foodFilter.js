@@ -9,7 +9,7 @@ const FoodFilter = () => {
             <div>
                 {cuisineData.map((cuisine) => {
                     return (
-                        <FoodCard cuisine = {cuisine.name} />
+                        <FoodCard cuisine = {cuisine} />
                     )
                 })}
             </div>

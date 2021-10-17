@@ -10,6 +10,7 @@ function App() {
       <Switch>
         <Route exact path="/" component = {LandingPage} />
         <Route exact path="/filter" component = {FilterPhase} />
+        <Route exact path='/ban' component = {BanPhase} />
       </Switch>
     </Router>
   );
