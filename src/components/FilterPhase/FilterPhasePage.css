@@ -29,10 +29,13 @@
     margin: 13px;
     padding-top: 41px;
     padding-bottom: 41px;
+<<<<<<< HEAD
 }
 
 .FoodCard:hover {
     background-color: #B9B9B9;
+=======
+>>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
 }
 
 #slider{
