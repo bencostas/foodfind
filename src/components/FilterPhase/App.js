@@ -25,7 +25,6 @@ const containerStyle = {
 
 const FilterPhase = () => {
 
-<<<<<<< HEAD
     let history = useHistory();
 
     const { isLoaded } = useJsApiLoader({
@@ -48,9 +47,6 @@ const FilterPhase = () => {
     // onLoad={onLoad}
     // onUnmount={onUnmount}
     return isLoaded ? (
-=======
-    return (
->>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
         <div className = 'filterPhase'>
             <section className = 'selectionScreen'>
                 <FoodFilter />
@@ -58,15 +54,11 @@ const FilterPhase = () => {
                 <DistanceFilter />
             </section>
             <section className="buttonScreen">
-<<<<<<< HEAD
             <button onClick={() => {
             history.push("/ban");
             }}
             type="button"
             className="continueButton">Continue</button>
-=======
-            <button type="button" className="continueButton">Continue</button>
->>>>>>> 31b2501ff09733f57775f6d99a5ce0f7ddf920ac
 
             </section>
             <div className="mapContainer">
