@@ -2,6 +2,8 @@ import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import mapStyles from '../mapStyles';
 import './BanPhase.css';
+import cuisineData from './FilterPhase/data/cuisineData';
+import useGeolocation from './useGeoLocation';
 
 const containerStyle = {
   width: "70vw",
@@ -15,10 +17,11 @@ const options = {
     disableDefaultUI: true,
 }
 
+console.log(window.location.lat);
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: window.location.lat,
+  lng: window.location.lng
 };
 
 console.log(process.env.REACT_APP_GOOGLE_API_KEY);
