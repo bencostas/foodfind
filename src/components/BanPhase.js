@@ -24,8 +24,6 @@ const center = {
   lng: window.location.lng
 };
 
-console.log(process.env.REACT_APP_GOOGLE_API_KEY);
-
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',

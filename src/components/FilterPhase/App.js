@@ -22,7 +22,7 @@ const containerStyle = {
     lng: -38.523
   };
 
-function FilterPhase () {
+const FilterPhase = () => {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey:  process.env.REACT_APP_GOOGLE_API_KEY,
@@ -41,13 +41,13 @@ function FilterPhase () {
     }, [])
     return isLoaded ? (
         <div className = 'filterPhase'>
-            <section id = 'selectionScreen'>
+            <section className = 'selectionScreen'>
                 <FoodFilter />
                 <PriceFilter />
                 <DistanceFilter />
             </section>
-            <section>
-            <button type="button"className="continueButton">Continue</button>
+            <section className="buttonScreen">
+            <button type="button" className="continueButton">Continue</button>
 
             </section>
             <div className="mapContainer">
